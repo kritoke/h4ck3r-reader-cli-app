@@ -12,7 +12,7 @@ class H4ck3rReader::CLI
     puts "--------------------------------------------"
     @headlines = H4ck3rReader::Headlines.all
     @headlines.each do |headline|
-      puts "#{headline.rank} #{headline.title} from #{headline.site}"
+      puts "#{headline.rank} \"#{headline.title}\" from the site: #{headline.site}"
       puts "Full Web Address: #{headline.url}\n\n"
     end
     puts "--------------------------------------------"

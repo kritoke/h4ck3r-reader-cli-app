@@ -4,7 +4,7 @@ This is a simple web scraper that pulls the top 30 headlines from [Hacker News](
 
 ## Usage
 
-Run 'bin\h4ck3r_reader'
+Run ```bin\h4ck3r_reader```
 
 ## License
 

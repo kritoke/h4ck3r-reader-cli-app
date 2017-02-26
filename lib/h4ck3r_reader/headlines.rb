@@ -1,6 +1,8 @@
 class H4ck3rReader::Headlines
   attr_accessor :headline, :url, :site
 
+  @@all = []
+
   def self.new_from_homepage(article)
     self.new(
       article.css("a.storylink").text,
@@ -13,6 +15,11 @@ class H4ck3rReader::Headlines
     @headline = headline
     @url = url
     @site = site
+    @@all << self
+  end
+
+  def self.all
+    @@all
   end
 
 end

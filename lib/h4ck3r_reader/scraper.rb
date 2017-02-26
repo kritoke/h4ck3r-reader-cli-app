@@ -1,4 +1,3 @@
-
 class H4ck3rReader::Scraper
 
   def get_page
@@ -12,7 +11,6 @@ class H4ck3rReader::Scraper
   def make_headlines
     scrape_homepage.each do |article|
       H4ck3rReader::Headlines.new_from_homepage(article)
-  #    binding.pry
     end
   end
 
